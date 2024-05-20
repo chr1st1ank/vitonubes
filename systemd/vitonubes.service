@@ -1,0 +1,12 @@
+[Unit]
+Description=Vitocal Canbus to MQTT bridge
+After=multi-user.target
+
+[Service]
+Type=idle
+User=${USER}
+ExecStart=${BASE_DIR}/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
