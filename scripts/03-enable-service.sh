@@ -10,3 +10,7 @@ sed -i "s#\${BASE_DIR}#${BASE_DIR}#" /tmp/vitonubes.service
 sudo cp /tmp/vitonubes.service /etc/systemd/system/vitonubes.service
 
 cat /etc/systemd/system/vitonubes.service
+
+sudo systemctl start vitonubes.service
+sudo systemctl enable vitonubes.service
+
